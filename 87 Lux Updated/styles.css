@@ -1,0 +1,593 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Pathway+Gothic+One&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+  --dark-bg-color: #7e53fd;
+	--dark-bg-text: white;
+	--light-bg-color: white;
+	--light-bg-text: #7e53fd;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	background-color: #f9fafc;
+}
+.container {
+	width: 60vw;
+	margin: 0 auto;
+}
+
+/*Header Section*/
+header{
+	display: flex;
+	height: 62px;
+	padding: 20px 0; 
+
+	background-color: #fff;
+	box-shadow: 0px 2px 10px -1px rgba(204,204,204,1);
+	margin-bottom: 15px;
+	position: fixed;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+.logo{
+	cursor: pointer;
+}
+.header-content{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.logo{
+	font-weight: 700;
+	font-size: 21px;
+}
+header .right-menu a{
+	text-decoration: none;
+	color: black;
+	margin-right: 12px;
+	font-size: 16px;
+}
+header .right-menu a:hover{
+	color: #7e53fd;
+}
+
+/*Hero Section*/
+.hero-section{
+	
+	display: flex;
+	flex-direction: row;
+	margin-top: 82px;
+	margin-bottom: 100px;
+}
+
+/*Left Hero Section*/
+.left-hero{
+	width: 50vw;
+	padding: 75px 10px;
+}
+
+.right-hero{
+	width: 50vw;
+	position: relative;
+}
+.left-hero h1{
+	font-family: 'Pathway Gothic One', sans-serif;
+	font-size: 60px;
+}
+.left-hero h4 {
+	color: #7c828d;
+	font-size: 18px;
+	letter-spacing: 1px;
+	padding: 22px 0;
+}
+input {
+	height: 46px;
+	width: 340px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 30px;
+	box-shadow: 0px 6px 10px -1px rgba(204,204,204,1);
+	outline: none;
+}
+input::placeholder{
+	color: #b3b4b5;
+	letter-spacing: 1px;
+	font-weight: 100;
+	font-size: 13px;
+}
+.submit{
+	padding: 15px 50px;
+	border-radius: 4px;
+	border: none;
+	font-size: 15px;
+	letter-spacing: 1px;
+	outline: none;
+	cursor: pointer;
+}
+.submit.getStarted {
+	background-color: var(--dark-bg-color);
+	color: var(--dark-bg-text);
+}
+
+/*Right Hero Section*/
+.green-circle{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: absolute;
+	top: 35px;
+	left: 55px;
+	background: -moz-linear-gradient(left, rgba(89,115,85,1) 0%, rgba(230,215,70,1) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left, rgba(89,115,85,1) 0%,rgba(230,215,70,1) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, rgba(89,115,85,1) 0%,rgba(230,215,70,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.teal-circle{
+	width: 220px;
+	height: 220px;
+	border-radius: 50%;
+	position: absolute;
+	top: 245px;
+	left: 355px;
+	background: -moz-linear-gradient(left, rgba(20,135,144,1) 0%, rgba(20,135,144,1) 44%, rgba(4,230,245,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(20,135,144,1) 0%,rgba(20,135,144,1) 44%,rgba(4,230,245,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(20,135,144,1) 0%,rgba(20,135,144,1) 44%,rgba(4,230,245,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.blue-triangle{
+	width: 0;
+	height: 0;
+	border-left: 300px solid transparent;
+	border-right: 300px solid transparent;
+	border-bottom: 500px solid #706af6;
+	transform: rotate(12deg);
+	position: absolute;
+	top: -40px;
+	left: 0px;
+}
+.video {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 285px;
+  width: 480px;
+	position: absolute;
+	top: 95px;
+	left: 40px;
+}
+
+/*Platforms section*/
+.platforms-section {
+	width: 70%;
+	margin: 25px auto;
+}
+
+.platform-title h6{
+	text-transform: uppercase;
+	color: #7c828d;
+	
+	font-size: 11px;
+}
+.platforms-section .companies{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.platforms-section .partners{
+	width: 20%;
+}
+#wordpress, #bigcommerce, #wix{
+	padding-top: 20px;
+}
+.platforms-section img {
+	width: 80%;
+	margin: 10px;
+}
+.platforms-section .wix img {
+	width: 56%;
+}
+
+/*Latest Projects section*/
+.latestProjects{
+	height: 330px;
+	margin: 80px 0 10px;
+	position: relative;
+	margin-left: 20vw;
+}
+
+.projectsHeading {
+	background-color: #35364c;
+	height: 210px;
+	border-radius: 8px;
+	position: relative;
+	margin-top: 200px;
+}
+.projectsHeading h5{
+	color: white;
+	text-transform: uppercase;
+	font-family: 'Pathway Gothic One', sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+	display: inline-block;
+	transform: rotate(90deg);
+	position: absolute;
+	top: 97px;
+}
+.projectsSlide{
+	display: flex;
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	margin-left: 5vw;
+	top: -138px;
+}
+.projectsSlide img{
+	margin-right: 15px;
+}
+.latestProjects .slideControls {
+	margin-top: 180px;
+	text-align: center;
+}
+.latestProjects .slideControls i {
+	margin-right: 5px;
+	background-color: #706af6;
+	padding: 5px;
+	width: 60px;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+}
+/*View More section*/
+
+.viewMore {
+	margin: 85px 0;
+	text-align: center;
+	height: 90px;
+}
+.viewMore button {
+	background-color: transparent;
+	color: var(--light-bg-text);
+	border: 2px solid var(--light-bg-text);
+	margin: 15px;
+}
+.viewMore button:hover {
+	background-color: var(--dark-bg-color);
+	color: var(--dark-bg-text);
+	transition: 0.2s ease-in;
+}
+
+/*Team section*/
+.teamSection{
+	height: 700px;
+	margin-top: 200px;
+}
+.teamContent{
+	padding: 20px;
+	position: relative;
+}
+.teamContent h3{
+	font-weight: 300;
+	font-size: 60px;
+	letter-spacing: 7px;
+	display: inline-block;
+	color: #38394f;
+	position: absolute;
+	top: 50%;
+	left: 31vw;
+	transform: translate(-50%, -50%);
+	margin-top: 330px;
+}
+.teamContent img{
+	border-radius: 50%;
+	position: absolute;
+}
+.teamContent img.firstPerson{
+	width: 7%;
+	border: 5px solid #c22696;
+	top: 3vw;
+	left: 10vw;
+}
+.teamContent img.secondPerson{
+	width: 11%;
+	border: 5px solid #38ae43;
+	left: 28vw;
+	top: 7vw;
+}
+.teamContent img.thirdPerson{
+	width: 7%;
+	border: 5px solid #df8028;	
+	right: 7vw;
+	top: 0;
+}
+.teamContent img.fourthPerson{
+	width: 11%;
+	border: 5px solid #7d52fc;
+	top: 9vw;
+	right: -4vw;	
+}
+.teamContent img.fifthPerson{
+	width: 7%;
+    border: 5px solid #e46942;
+    top: 25vw;
+    right: 9vw;
+}
+.teamContent img.sixthPerson{
+	width: 7%;
+    border: 5px solid #eefc52;
+    top: 30vw;
+    left: 17vw;
+}
+.teamContent img.seventhPerson{
+	width: 14%;
+    border: 5px solid #5296fc;
+		top: 19vw;
+    left: 2vw;
+}
+
+/*Custom section*/
+
+.custom{
+	height: 500px;
+	padding-top: 80px;
+	position: relative;
+	z-index: 0;
+}
+.customSteps{
+	display: inline-block;;
+	width: 25%;
+}
+.custom h2{
+	color: #38394f;
+	font-size: 53px;
+	text-align: center;
+	margin-bottom: 100px;
+
+} 
+.custom .customSteps ul li{
+	list-style-type: none;
+
+	margin-bottom: 15px;
+	font-weight: 700;
+	color: #b0b6c0;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+}
+.custom .customSteps ul li:first-child span{
+	color: #38ae43;
+}
+.custom .customSteps ul li:first-child{
+	color: black;
+}
+
+/*Custom Hanging section*/
+.customOutline{
+	background-color: #e5e5e5;
+	height: 426px;
+	width: 82%;
+	position: absolute;
+	right: 0px;
+	top: 195px;
+	z-index: 1;
+	display: flex;
+	border-radius: 0 0 0 6px;
+}
+.customOutline .firstArea{
+	width: 37%;
+	height: 426px;
+	display: inline-block;
+	border-top: 3px solid #38ae43;
+	background-color: white;
+	border-radius: 0 0 0 6px;
+}
+.customOutline .firstArea h5{
+	font-size: 18px;
+	text-align: center;
+	font-weight: 400;
+	padding: 5px 0 10px;
+}
+.customOutline .firstArea p{
+	font-size: 14px;
+	padding: 5px 6px 0 10px;
+	color: #515265;
+	line-height: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+.customOutline .secondArea{
+	width: 33%;
+	height: 400px;
+	display: inline-block;
+	padding-top: 28px;
+}
+.customOutline .thirdArea{
+	width: 42%;
+	height: 450px;
+	display: inline-block;
+	padding-top: 28px;
+}
+/*Footer section*/
+
+.footer{
+	height: 440px;
+	background-color: #35364c;
+}
+.footerContent{
+	text-align: center;
+	padding-top: 220px;
+}
+.footerContent h3{
+	color: white;
+	font-size: 28px;
+	margin-bottom: 35px;
+	font-weight: 400;
+}
+
+/*Media Queries section*/
+/* For iPad */
+@media only screen and (max-width: 800px) {
+	.container{
+		width: 80vw;
+	}
+	.hero-section{
+		display: block;
+	}
+	.left-hero{
+		width: 80vw;
+		padding: 75px 10px;
+		text-align: center;
+	}
+	.right-hero{
+		margin-left: 6vw;
+    margin-top: 8vw;
+	}
+	.platforms-section{
+		margin-top: 80vw;
+	}
+
+
+	.latestProjects{
+		margin-left: 11vw;
+	}
+	.projectsSlide{
+		margin-left: 9vw;
+	}
+	.viewMore {
+    margin: 65px 0 50px;
+	}
+	.teamSection {
+    height: 315px;
+    margin-top: 115px;
+	}
+	.teamContent h3{
+		margin-top: 25vh;
+		font-size: 45px;
+		transform: none;
+		left: 18vw;
+	}
+	.custom{
+		height: 465px;
+	}
+	.customSteps {    
+    width: 18%;
+	}
+	.custom .customSteps ul li {
+		font-size: 10px;
+	}
+	.customOutline .thirdArea {
+		overflow: hidden;
+	}
+	.footer{
+		height: 400px;
+	}
+	.footerContent {   
+    padding-top: 185px;
+	} 
+}
+
+/* For Mobile Phones */
+@media only screen and (max-width: 500px) {
+	.container{
+		width: 80vw;
+	}
+	.hero-section{
+		display: block;
+	}
+	.left-hero{
+		width: 80vw;
+		padding: 40px 10px 75px;
+		text-align: center;
+	}
+	.right-hero{
+		margin-left: 6vw;
+    margin-top: 8vw;
+	}
+	.green-circle {
+    width: 175px;
+    height: 175px;
+    
+    top: 0px;
+    left: 0px;
+	}
+	.teal-circle {
+    width: 175px;
+    height: 175px;   
+    top: 35vh;
+    left: 42vw;
+	}
+	.blue-triangle {  
+    border-left: 217px solid transparent;
+    border-right: 203px solid transparent;
+    border-bottom: 376px solid #706af6;
+    top: -40px;
+    left: 0px;
+}
+	.video {   
+    height: 235px;
+    width: 393px;  
+    top: 40px;
+    left: -30px;
+}
+	.platforms-section{
+		margin-top: 90vw;
+	}
+	.latestProjects{
+		margin-left: 11vw;
+	}
+	.projectsSlide{
+		margin-left: 13vw;
+	}
+	.viewMore {
+    margin: 65px 0 50px;
+	}
+	.viewMore button{
+		padding: 10px;
+	}
+	.teamSection {
+    height: 200px;
+    margin-top: 50px;
+	}
+	.teamContent h3{
+		margin-top: 25vh;
+		font-size: 23px;
+		transform: none;
+		left: 18vw;
+	}
+	.teamContent img.sixthPerson {
+    width: 9%;
+    top: 32vw; 
+	}
+	.teamContent img.fifthPerson {
+    top: 28vw;
+    right: 7vw;
+}
+	.custom{
+		height: 475px;
+	}
+	.custom h2 {
+    font-size: 30px;
+	}
+	.customSteps {
+    width: 18%;
+	}
+	.custom .customSteps ul li {
+		font-size: 10px;
+	}
+	.customOutline .thirdArea {
+		overflow: hidden;
+	}
+	.customOutline { 
+    overflow: hidden;
+	}
+	.footer{
+		height: 400px;
+	}
+	.footerContent {  
+    padding-top: 185px;
+	}
+}
